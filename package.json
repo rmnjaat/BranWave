@@ -23,7 +23,7 @@
   },
   "build": {
     "productName": "LinuxBrainWave",
-    "appId": "RamanJangu",
+    "appId": "com.myapp.LINUXBRANWAVE",
     "directories": {
       "output": "dist"
     },

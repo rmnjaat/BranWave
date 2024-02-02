@@ -47,12 +47,7 @@ Feel free to reach out if you have any questions or feedback! 🚀
 ## Build Details 🏗️
 
 - **Product Name:** LinuxBrainWave
-- **App ID:** RamanJangu
-
-
-
-
-## Additional Information ℹ️
+- **App ID:** com.myapp.LINUXBRAINWAVE
 
 
 For any issues or feature requests, please [create an issue](https://github.com/rmnjaat/LinuxBranWave/issues). 🐛🚀
