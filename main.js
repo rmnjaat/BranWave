@@ -9,8 +9,10 @@ let win;
 app.on('ready',()=>{
 
     win = new BrowserWindow({
+        minWidth:560,
+        minHeight:1000,
         width:590,
-        height:1000,
+        
 
         webPreferences:{
             nodeIntegration:true,
@@ -19,8 +21,8 @@ app.on('ready',()=>{
 
     })
 
-    const menu = Menu.buildFromTemplate(Menutemplete);
-    Menu.setApplicationMenu(menu);
+    // const menu = Menu.buildFromTemplate(Menutemplete);
+    // Menu.setApplicationMenu(menu);
 
 
     win.loadFile('index.html');

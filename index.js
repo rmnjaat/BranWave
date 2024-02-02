@@ -14,32 +14,49 @@ const genAi = new GoogleGenerativeAI(apiKey);
 
 let userMassage;
 let chatInputHeight = chatInput.scrollHeight;
-const generatResponse = async (incomingChat) => {
+
+
+const generateResponse = async (incomingChat) => {
 
     let messageContent = incomingChat.querySelector("p");
+    try {
+        const model = await genAi.getGenerativeModel({ model: "gemini-pro" });
+
+        // let result = model.generateContent(userMassage);   //this will response after completining whole response
+
+        const result = await model.generateContentStream(userMassage);
 
 
 
-    const model = await genAi.getGenerativeModel({ model: "gemini-pro" });
+        // if (!result.ok) {
+        //     throw new Error("Something went wrong with the model generation");
+        // }
+
+        let response = (await result).response;
+        console.log(response);
+
+        // let text = response.text();
+
+        let text = '';
+        for await (const chunk of result.stream) {
+            const chunkText = chunk.text();
+            console.log(chunkText);
+            text += chunkText;
+        }
 
 
-    let result = model.generateContent(userMassage);
 
-    let response = (await result).response;
-
-    let text = response.text();
-
-    messageContent.textContent = text;
-    chatBox.scrollTo(0, chatBox.scrollHeight+10);
-
-
-
-
-
+        messageContent.textContent = text;
+        chatBox.scrollTo(0, chatBox.scrollHeight + 10);
+    } catch (error) {
+        console.error(error);
+        messageContent.textContent = "An error occurred while generating the response";
+    }
 
 
 
 }
+
 
 const creaChatLi = (message, className) => {
     const chatLi = document.createElement("li");
@@ -76,7 +93,7 @@ const handleChat = () => {
 
 
 
-        generatResponse(incomingChat);
+        generateResponse(incomingChat);
 
 
 
@@ -106,7 +123,7 @@ chatInput.addEventListener("input", () => {
 
 chatInput.addEventListener("keydown", (e) => {
 
-    if(e.key=="Enter"  && !e.shiftkey ){
+    if (e.key == "Enter" && !e.shiftkey) {
         e.preventDefault();
         handleChat();
     }
