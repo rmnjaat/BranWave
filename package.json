@@ -1,5 +1,5 @@
 {
-  "name": "colpilate",
+  "name": "LinuxBrainWave",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -7,11 +7,34 @@
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": {
+    "name": "Raman",
+    "email": "ramanjangu01@gmail.com",
+    "link": "https://linkedin.com/in/raman-jangu"
+  },
   "license": "ISC",
   "dependencies": {
     "@google/generative-ai": "^0.2.0",
-    "dotenv": "^16.4.1",
-    "electron": "^28.2.1"
+    "dotenv": "^16.4.1"
+  },
+  "devDependencies": {
+    "electron": "^28.2.1",
+    "electron-builder": "^22.14.13"
+  },
+  "build": {
+    "productName": "LinuxBrainWave",
+    "appId": "RamanJangu",
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": ["deb"],
+      "icon": "./icon.png"  
+    }
+  },
+  "extraMetadata": {
+    "apiKey": "AIzaSyBk9_0NzYwNVnFKIRu5i724yln6s8tZXqw"
   }
+
+
 }

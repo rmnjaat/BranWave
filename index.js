@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 
 const chatInput = document.querySelector(".chat-input textarea");
 const sendBtn = document.querySelector(".chat-input span");
@@ -9,7 +9,10 @@ const chatBox = document.querySelector(".chatbox");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 
-const apiKey = process.env.API_KEY;
+// const apiKey = process.env.API_KEY;
+// const apiKey = "AIzaSyBk9_0NzYwNVnFKIRu5i724yln6s8tZXqw";
+const apiKey = "AIzaSyBk9_0NzYwNVnFKIRu5i724yln6s8tZXqw";
+
 const genAi = new GoogleGenerativeAI(apiKey);
 
 let userMassage;
@@ -33,7 +36,6 @@ const generateResponse = async (incomingChat) => {
         // }
 
         let response = (await result).response;
-        console.log(response);
 
         // let text = response.text();
 
@@ -50,7 +52,7 @@ const generateResponse = async (incomingChat) => {
         chatBox.scrollTo(0, chatBox.scrollHeight + 10);
     } catch (error) {
         console.error(error);
-        messageContent.textContent = "An error occurred while generating the response";
+        messageContent.textContent = "An error occurred while generating the response . Please check your Prompt and network..";
     }
 
 

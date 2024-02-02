@@ -21,8 +21,8 @@ app.on('ready',()=>{
 
     })
 
-    // const menu = Menu.buildFromTemplate(Menutemplete);
-    // Menu.setApplicationMenu(menu);
+    const menu = Menu.buildFromTemplate(Menutemplete);
+    Menu.setApplicationMenu(menu);
 
 
     win.loadFile('index.html');
@@ -54,8 +54,16 @@ const Menutemplete = [
   
   
     {
-      label: 'About Developer',
+      label: 'About ',
       submenu: [
+        {
+          label: 'Document',
+          click: async () => {
+            const { shell } = require('electron')
+            await shell.openExternal('https://github.com/rmnjaat/LinuxBranWave')
+          }
+        },
+        { type: 'separator' },
         {
           label: 'GitHub',
           click: async () => {
@@ -63,7 +71,6 @@ const Menutemplete = [
             await shell.openExternal('https://github.com/rmnjaat')
           }
         },
-        { type: 'separator' },
   
         {
           label: 'Linkdin',
