@@ -1,5 +1,5 @@
 {
-  "name": "LinuxBrainWave",
+  "name": "BrainWave",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -22,19 +22,19 @@
     "electron-builder": "^22.14.13"
   },
   "build": {
-    "productName": "LinuxBrainWave",
-    "appId": "com.myapp.LINUXBRANWAVE",
+    "productName": "BrainWave",
+    "appId": "com.myapp.BRANWAVE",
     "directories": {
       "output": "dist"
     },
     "linux": {
-      "target": ["deb"],
-      "icon": "./icon.png"  
+      "target": [
+        "deb"
+      ],
+      "icon": "./icon.png"
     }
   },
   "extraMetadata": {
     "apiKey": "AIzaSyBk9_0NzYwNVnFKIRu5i724yln6s8tZXqw"
   }
-
-
 }

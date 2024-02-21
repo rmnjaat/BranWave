@@ -1,15 +1,17 @@
-# LinuxBrainWave - 🚀 AI Access App for Linux
+# Dowanload .deb file ⬇️ [dowanload](https://drive.google.com/file/d/1DjrdnE-213dRanGz8LyW2jLg1WCJmeLg/view?usp=drive_link)
 
-Welcome to **LinuxBrainWave**, an Electron app that provides direct access to AI on Linux. With this app, you can easily install and use AI capabilities for your projects. 🧠✨
+# BrainWave - 🚀 AI Access App for Linux
+
+Welcome to **BrainWave**, an Electron app that provides direct access to AI on Linux. With this app, you can easily install and use AI capabilities for your projects. 🧠✨
 
 ## Installation 🛠️
 
-Follow these simple steps to get LinuxBrainWave up and running on your Linux machine:
+Follow these simple steps to get BrainWave up and running on your Linux machine:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/LinuxBrainWave.git
-   cd LinuxBrainWave
+   git clone https://github.com/your-username/BrainWave.git
+   cd BrainWave
    ```
 
 2. **Install dependencies:**
@@ -22,11 +24,11 @@ Follow these simple steps to get LinuxBrainWave up and running on your Linux mac
    npm start
    ```
 
-That's it! LinuxBrainWave should now be running on your machine. 🎉
+That's it! BrainWave should now be running on your machine. 🎉
 
 ## Dependencies 📦
 
-LinuxBrainWave relies on the following dependencies:
+BrainWave relies on the following dependencies:
 
 - **@google/generative-ai**: Version ^0.2.0
 
@@ -34,7 +36,7 @@ These dependencies will be automatically installed when you run `npm install`. �
 
 ## License 📜
 
-LinuxBrainWave is licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
+BrainWave is licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
 
 ## Author 👨‍💻
 
@@ -46,10 +48,11 @@ Feel free to reach out if you have any questions or feedback! 🚀
 
 ## Build Details 🏗️
 
-- **Product Name:** LinuxBrainWave
-- **App ID:** com.myapp.LINUXBRAINWAVE
+- **Product Name:** BrainWave
+- **App ID:** com.myapp.BrainWave
 
 
-For any issues or feature requests, please [create an issue](https://github.com/rmnjaat/LinuxBranWave/issues). 🐛🚀
+## 🐛  For any issues or feature requests, please [create an issue](https://github.com/rmnjaat/BranWave/issues). 🐛🚀
 
-Thank you for using LinuxBrainWave! 🙌
+
+Thank you for using BrainWave! 🙌

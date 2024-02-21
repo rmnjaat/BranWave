@@ -60,7 +60,7 @@ const Menutemplete = [
           label: 'Document',
           click: async () => {
             const { shell } = require('electron')
-            await shell.openExternal('https://github.com/rmnjaat/LinuxBranWave')
+            await shell.openExternal('https://github.com/rmnjaat/BranWave')
           }
         },
         { type: 'separator' },
