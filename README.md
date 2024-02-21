@@ -1,4 +1,4 @@
-# Dowanload .deb file ⬇️ [dowanload](https://drive.google.com/file/d/1DjrdnE-213dRanGz8LyW2jLg1WCJmeLg/view?usp=drive_link)
+2. **Dowanload .deb file** ⬇️ [dowanload](https://drive.google.com/file/d/1DjrdnE-213dRanGz8LyW2jLg1WCJmeLg/view?usp=drive_link)
 
 # BrainWave - 🚀 AI Access App for Linux
 
