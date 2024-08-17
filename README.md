@@ -10,7 +10,7 @@ Follow these simple steps to get BrainWave up and running on your Linux machine:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/BrainWave.git
+   git clone https://github.com/rmnjaat/BranWave.git
    cd BrainWave
    ```
 
@@ -56,3 +56,6 @@ Feel free to reach out if you have any questions or feedback! 🚀
 
 
 Thank you for using BrainWave! 🙌
+
+## Screenshots
+![image](https://github.com/user-attachments/assets/58d014aa-8ee5-45a8-97ae-7ecd710e28a0)
