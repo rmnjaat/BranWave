@@ -1,4 +1,4 @@
-## Dowanload .deb file⬇️   [dowanload](https://drive.google.com/file/d/1DjrdnE-213dRanGz8LyW2jLg1WCJmeLg/view?usp=drive_link)
+## Dowanload .deb file⬇️   [dowanload](https://drive.google.com/file/d/1j1aefncX6uCRFfp1stdeHDJFBuOXAlli/view?usp=sharing)
 
 # BrainWave - 🚀 AI Access App for Linux
 
@@ -59,3 +59,7 @@ Thank you for using BrainWave! 🙌
 
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/58d014aa-8ee5-45a8-97ae-7ecd710e28a0)
+
+
+## Future Scope:
+ Styling Output .

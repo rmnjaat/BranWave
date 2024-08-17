@@ -11,7 +11,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 // const apiKey = process.env.API_KEY;
 // const apiKey = "AIzaSyBk9_0NzYwNVnFKIRu5i724yln6s8tZXqw";
-const apiKey = "AIzaSyBk9_0NzYwNVnFKIRu5i724yln6s8tZXqw";
+const apiKey = "AIzaSyDH38Gyu7eiJeeadHzQperUShQ-ChmISrQ";
 
 const genAi = new GoogleGenerativeAI(apiKey);
 
@@ -52,7 +52,8 @@ const generateResponse = async (incomingChat) => {
         chatBox.scrollTo(0, chatBox.scrollHeight + 10);
     } catch (error) {
         console.error(error);
-        messageContent.textContent = "An error occurred while generating the response . Please check your Prompt and network..";
+        // messageContent.textContent = "An error occurred while generating the response . Please check your Prompt and network..";
+        messageContent.textContent = error;
     }
 
 
